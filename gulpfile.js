@@ -8,7 +8,8 @@ const reload = browserSync.reload;
 const paths = {
   html: 'src/*.html',
   scss: 'src/sass/**/*.scss',
-  js: 'src/js/main.js'
+  js: 'src/js/main.js',
+  img: 'src/img/**/*'
 }
 
 gulp.task('sass', () => {
@@ -21,6 +22,11 @@ gulp.task('sass', () => {
 gulp.task('html', () => {
   gulp.src(paths.html)
     .pipe(reload({stream:true}));
+});
+
+gulp.task('images', () => {
+    gulp.src(paths.img)
+      .pipe(reload({stream:true}));
 });
 
 gulp.task('browserSync', () => {
@@ -37,6 +43,7 @@ gulp.task('browserSync', () => {
 gulp.task('watcher', () => {
   gulp.watch(paths.scss, ['sass']);
   gulp.watch(paths.html, ['html']);
+  gulp.watch(paths.img, ['images']);
 });
 
 gulp.task('default', ['watcher', 'browserSync']);
