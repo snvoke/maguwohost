@@ -215,25 +215,63 @@ html {
   background-color: fade-out($white, 0.5);
 }
 
+// .ap-select_special {
+//   -webkit-appearance: button;
+//   -webkit-border-radius: 20px;
+//   /* Подмешал вебкитовский градиент,
+//      чтобы не показывать стрелку в других браузерах */
+//   background: url(select-arrow.png) no-repeat right center,
+//               -webkit-linear-gradient(#fff, #fff);
+//   border: 2px solid #adcbe2;
+//   padding: 0 29px 0 7px;
+//   height: 24px;
+//   font-size: 13px;
+//   line-height: 16px;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//   outline: none;
+//   color: #3e94c5;
+//   font: -webkit-small-control;
+// }
+// .ap-select_special:focus {
+//   -webkit-
+// }
+
 .search__field {
+
   width: 273px;
   height: 54px;
   margin-right: 1px;
   padding: 14px 30px 14px 20px;
   font-size: 18px;
+
   border: none;
 }
 
 .search__select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(../img/icon/icon-arrow--down.png) no-repeat;
+  background-position: 75px 24px;
   width: 109px;
   height: 54px;
   border: none;
   font-size: 18px;
+  vertical-align: top;
   padding: 14px 20px;
   font-weight: 700;
-  outline: none;
+  // outline: none;
   background-color: $yellow;
   color: $purple;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  // option:focus {
+  //   box-shadow: 0 0 5px #879eb0;
+  //   outline: 2px solid $yellow;
+  // }
 
 }
 
