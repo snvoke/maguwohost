@@ -1,0 +1,12 @@
+@mixin cards() {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

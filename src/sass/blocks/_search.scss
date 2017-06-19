@@ -1,0 +1,36 @@
+.search {
+  width: 570px;
+  padding: 17px;
+  margin: 0 auto;
+  font-size: 0px;
+  background-color: fade-out($white, 0.5);
+}
+
+.search__field {
+  width: 273px;
+  height: 54px;
+  margin-right: 1px;
+  padding: 14px 30px 14px 20px;
+  font-size: 18px;
+  border: none;
+}
+
+.search__select {
+  width: 109px;
+  height: 54px;
+  padding: 14px 20px;
+  font-size: 18px;
+  vertical-align: top;
+  font-weight: 700;
+  color: $purple;
+  background: url(../img/icon/icon-arrow--down.png) no-repeat;
+  background-position: 75px 24px;
+  background-color: $yellow;
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  &::-ms-expand {
+    display: none;
+  }
+}

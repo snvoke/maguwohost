@@ -1,0 +1,90 @@
+.btn {
+  @include cards;
+  margin: 0;
+  padding: 10px 25px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $purple;
+  background-color: $yellow;
+  border: none;
+
+  &:hover {
+    background-color: darken($yellow, 15%);
+  }
+
+  &--search {
+    width: 153px;
+    height: 54px;
+    padding: 14px 20px;
+    color: $white;
+    border-left: 1px solid $white;
+    cursor: pointer;
+  }
+}
+
+.btn-services {
+  @include cards;
+  padding: 12px 50px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $white;
+  border: 2px solid $white;
+  background-color: fade-out($white, 1);
+
+
+  &--yellow {
+    &:hover {
+      color: $yellow;
+      border: 2px solid $yellow;
+      background-color: inherit;
+    }
+  }
+  &--blue {
+    &:hover {
+      color: $purple;
+      border: 2px solid $purple;
+      background-color: inherit;
+    }
+  }
+}
+
+.btn-plans--right {
+  position: absolute;
+  top: 85px;
+  right: 90px;
+  padding: 25px 45px;
+  font-size: 18px;
+  border: 4px solid $white;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  font-size: 13px;
+  color: $white;
+  text-decoration: none;
+  background-color: fade-out(#000, .5);
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity ease-out .5s;
+  z-index: 999;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -6px;
+  }
+}

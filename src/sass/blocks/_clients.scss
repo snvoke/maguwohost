@@ -1,0 +1,83 @@
+.client {
+  @include clearfix;
+  padding: 80px 0;
+
+  p {
+    font-size: 16px;
+    color: $gray;
+  }
+}
+
+.client-inner {
+  float: left;
+  width: 350px;
+  padding-right: 35px;
+}
+
+.client__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.company {
+  float: right;
+  width: 780px;
+  margin-top: 15px;
+  font-size: 0;
+}
+
+.company__link {
+  @include cards;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.reviews {
+  margin-bottom: 110px;
+}
+
+.reviews__list {
+  @include clearfix;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.reviews__item {
+  position: relative;
+  width: 363px;
+  float: left;
+  margin-right: 30px;
+  color: $gray;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.reviews-inner {
+  padding: 20px 0;
+  background-color: $light-gray;
+}
+
+.reviews__author {
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $dimgray;
+}
+
+.reviews__avatar {
+  position: absolute;
+  bottom: -50px;
+  right: 25px;
+  width: 100px;
+  height: 100px;
+  border: 5px solid $bd-avatar;
+  border-radius: 50%;
+}
