@@ -12,27 +12,35 @@
   <!-- HEADER -->
   <header class="page-header">
     <div class="container">
+      <div class="page-header__inner">
+        <div class="page-header__mobile">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img class="logo__img" src="img/logo.png" width="232" height="33" alt="MaguwoHost">
+            </a>
+          </div>
+          <button class="hamburger hamburger--show" type="button">
+            <span class="hamburger__inner"></span>
+          </button>
+        </div>
 
-      <div class="logo">
-        <a href="#" class="logo__link">
-          <img class="logo__img" src="img/logo.png" width="232" height="33" alt="MaguwoHost">
-        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link nav__link--active">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Domain</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Hosting</a></li>
+          </ul>
+        </nav>
       </div>
-
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link nav__link--active">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Domain</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Hosting</a></li>
-        </ul>
-      </nav>
 
       <div class="callback">
         <p class="callback__desc">Do you need help ? Just Email, Live chat or Call us</p>
-        <a href="#" class="btn btn--callback">Live chat</a>
-        <div class="callback__phone">6284-6534</div>
+        <div class="callback__inner">
+          <a href="#" class="btn btn--callback">Live chat</a>
+          <div class="callback__phone">6284-6534</div>
+        </div>
       </div>
 
     </div><!-- container -->
@@ -47,7 +55,7 @@
         <p class="promo__desc">modern - fast - reliable</p>
 
         <div class="search">
-          <form action="/" method="get">
+          <form class="search__box" action="/" method="get">
             <input class="search__field" type="text" placeholder="Your Domain Name ...">
             <select name="language" class="search__select">
               <option value="0">.com</option>
@@ -208,8 +216,11 @@
     <div class="plans">
       <div class="container">
         <div class="plans__inner">
-          <b class="plans__title">Do you want to view Plans &amp; Pricing ?</b>
-          <p class="plans__desc">Follow the button in the right section.</p>
+          <div class="plans__text">
+            <h3 class="plans__title">Do you want to view Plans &amp; Pricing ?</h3>
+            <p class="plans__desc">Follow the button in the right section.</p>
+          </div>
+
           <a href="#" class="btn btn-plans--right">Plans &amp; Pricing</a>
         </div>
       </div>
@@ -221,8 +232,8 @@
   <footer class="page-footer">
     <div class="container">
       <div class="footer__inner">
-
         <div class="map">
+          <img class="map__picture" src="img/bg-map.png" alt="Map" width="820" height="409">
           <div class="map__marker map__marker--indonesia">
             <a class="map__marker-text" href="#">Yogyakarta, Indonesia <br>55282</a>
           </div>
@@ -244,7 +255,7 @@
             <a href="#" class="social-icon social-icon--in"></a>
             <a href="#" class="social-icon social-icon--gplus"></a>
           </div>
-          <a href="#" class="to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+          <a href="#" class="to-top"><i class="arrow arrow--up"></i></a>
         </div><!-- right-block -->
 
       </div><!-- footer__inner -->
@@ -255,7 +266,6 @@
   </footer>
   <!-- FOOTER END -->
 
-  <script src="js/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

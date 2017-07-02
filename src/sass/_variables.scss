@@ -9,3 +9,8 @@ $light-gray: #faf9f9;
 $light-purple: #67687b;
 $bg-mask: fade-out(#000, .67);
 $transparency: rgba(0,0,0, 0);
+
+$desktop: #{"max-width: 1200px"};
+$mobile: #{"max-width: 810px"};
+$mobile-s: #{"max-width: 702px"};
+$mobile-small: #{"max-width: 420px"};
